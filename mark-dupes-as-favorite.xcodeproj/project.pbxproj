@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		8807E7962B257C22009B6CB5 /* mark-dupes-as-favorite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mark-dupes-as-favorite"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8807E7992B257C22009B6CB5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		8807E7A02B257C69009B6CB5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8807E7A12B257CA8009B6CB5 /* mark-dupes-as-favorite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mark-dupes-as-favorite.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,8 @@
 		8807E7982B257C22009B6CB5 /* mark-dupes-as-favorite */ = {
 			isa = PBXGroup;
 			children = (
+				8807E7A12B257CA8009B6CB5 /* mark-dupes-as-favorite.entitlements */,
+				8807E7A02B257C69009B6CB5 /* Info.plist */,
 				8807E7992B257C22009B6CB5 /* main.swift */,
 			);
 			path = "mark-dupes-as-favorite";
@@ -243,9 +247,11 @@
 		8807E79E2B257C22009B6CB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "mark-dupes-as-favorite/mark-dupes-as-favorite.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A36Y9V3HVF;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/mark-dupes-as-favorite/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -254,9 +260,11 @@
 		8807E79F2B257C22009B6CB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "mark-dupes-as-favorite/mark-dupes-as-favorite.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A36Y9V3HVF;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/mark-dupes-as-favorite/Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
